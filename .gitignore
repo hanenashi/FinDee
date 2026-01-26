@@ -2,6 +2,8 @@
 .DS_Store
 Thumbs.db
 *.log
+*.zip
+
 
 # Node / build junk (if you add later)
 node_modules/
