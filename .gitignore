@@ -1,0 +1,8 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.log
+
+# Node / build junk (if you add later)
+node_modules/
+dist/

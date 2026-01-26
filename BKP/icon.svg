@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- FinDee Radar Ping Icon (master SVG) - cursor blip -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1b1b1b"></stop>
+      <stop offset="100%" stop-color="#0f0f0f"></stop>
+    </radialGradient>
+
+    <!-- soft “sweep” glow -->
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffcc00" stop-opacity="0.0"></stop>
+      <stop offset="55%" stop-color="#ffcc00" stop-opacity="0.08"></stop>
+      <stop offset="100%" stop-color="#ffcc00" stop-opacity="0.0"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- badge -->
+  <circle cx="512" cy="512" r="470" fill="url(#bg)"></circle>
+
+  <!-- radar rings -->
+  <g fill="none" stroke="#ffcc00" stroke-opacity="0.55">
+    <circle cx="512" cy="512" r="320" stroke-width="22"></circle>
+    <circle cx="512" cy="512" r="210" stroke-width="18" stroke-opacity="0.40"></circle>
+    <circle cx="512" cy="512" r="105" stroke-width="14" stroke-opacity="0.30"></circle>
+  </g>
+
+  <!-- crosshair -->
+  <g stroke="#ffcc00" stroke-opacity="0.35" stroke-width="18" stroke-linecap="round">
+    <path d="M512 210 L512 814"></path>
+    <path d="M210 512 L814 512"></path>
+  </g>
+
+  <!-- sweep wedge -->
+  <path d="M512 512 L820 420 A340 340 0 0 0 650 200 Z" fill="url(#sweep)"></path>
+
+  <!-- ping rings + cursor blip -->
+  <g>
+    <!-- ping rings (around the cursor) -->
+    <circle cx="740" cy="360" r="62" fill="none" stroke="#ffcc00" stroke-width="16" stroke-opacity="0.25"></circle>
+    <circle cx="740" cy="360" r="97" fill="none" stroke="#ffcc00" stroke-width="12" stroke-opacity="0.14"></circle>
+
+    <!-- I-beam cursor (chunky so it survives at 16px) -->
+    <!-- center at (740,360) -->
+    <g fill="#ffcc00">
+      <!-- vertical stem -->
+      <rect x="728" y="322" width="24" height="76" rx="10"></rect>
+
+      <!-- top bar -->
+      <rect x="708" y="312" width="64" height="18" rx="9"></rect>
+
+      <!-- bottom bar -->
+      <rect x="708" y="394" width="64" height="18" rx="9"></rect>
+    </g>
+
+    <!-- tiny dark “cut” to hint cursor negative space (keeps it from looking like a blob) -->
+    <rect x="738" y="330" width="4" height="60" rx="2" fill="#0f0f0f" opacity="0.35"></rect>
+  </g>
+
+  <!-- subtle outer stroke to pop on light backgrounds -->
+  <circle cx="512" cy="512" r="470" fill="none" stroke="#000" stroke-opacity="0.55" stroke-width="10"></circle>
+</svg>
