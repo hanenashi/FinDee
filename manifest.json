@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "FinDee",
-  "version": "0.3.4",
+  "version": "0.4.5",
   "description": "Type-ahead find with a draggable HUD and safe highlight overlay.",
   "permissions": ["storage"],
   "icons": {
